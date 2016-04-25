@@ -1,0 +1,1 @@
+<?php/*Template name: Blog Posts*/?><?php get_header(); ?><?php query_posts('post_type=post&post_status=publish&posts_per_page=10&paged='. get_query_var('paged')); ?>  <div class="main">    <div class="row">        <?php echo do_shortcode('[wp_blog_designer]'); ?>        </div>    </div>  </div><?php get_footer(); ?>
